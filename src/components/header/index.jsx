@@ -8,7 +8,7 @@ import Cart from "../cart/index";
 // Styles
 import * as Styles from "./styles";
 
-import UserActionTypes from '../../redux/user/action-types'
+import {loginUser, logoutUser} from '../../redux/user/actions'
 
 function Header() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
@@ -23,16 +23,11 @@ function Header() {
   };
 
   const handleLoginClick = () => {
-    dispatch({
-      type: UserActionTypes.LOGIN,
-      payload: { nome: "Mauro", email: "marudev@gmail.com"}
-    })
+    dispatch(loginUser({name: "Mauro", email: "marudev@email.com"}))
   }
 
   const handleLogoutClick = () => {
-    dispatch({
-      type: UserActionTypes.LOGOUT
-    })
+    dispatch(logoutUser())
   }
   return (
     <Styles.Container>
