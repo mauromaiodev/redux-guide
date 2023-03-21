@@ -55,6 +55,27 @@ const products = [
     imageUrl:
       "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
   },
+  {
+    id: "6228ffa5b7e6cb904bbexxxt",
+    name: "Amigo de Bolso",
+    price: 692,
+    imageUrl:
+      "https://media.licdn.com/dms/image/D4D35AQGvxJlGGLS__w/profile-framedphoto-shrink_800_800/0/1677154674916?e=1680048000&v=beta&t=IlDJM6WjHtCiE3QF_0kNGNssYwG5DuNnwCEvLZim9po",
+  },
+  {
+    id: "6228ffa5b7e6cb904bbexx4t",
+    name: "Amigo de Bolso1",
+    price: 699,
+    imageUrl:
+      "https://media.licdn.com/dms/image/D4D35AQG_x_VVYpCe2Q/profile-framedphoto-shrink_800_800/0/1645491493780?e=1680048000&v=beta&t=-U-GehRrz3uShKtM6U5beh0-_1a_wq36cxCn8yZgzoI",
+  },
+  {
+    id: "6228ffa5b7e6cb904bbe23xt",
+    name: "Amigo de Bolso2",
+    price: 6921,
+    imageUrl:
+      "https://media.licdn.com/dms/image/C5603AQHVxkoOPKLeZw/profile-displayphoto-shrink_800_800/0/1613002004671?e=1684972800&v=beta&t=Al5D3oNjuWD3YI9uRJUTrRfjvJnsBovsBsQr90aJtmE",
+  },
 ];
 
 export default products;
