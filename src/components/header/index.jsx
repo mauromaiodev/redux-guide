@@ -37,7 +37,7 @@ function Header() {
   }
   return (
     <Styles.Container>
-      <Styles.Logo>Redux Shopping</Styles.Logo>
+      <Styles.Logo>ShopList</Styles.Logo>
       <Styles.Buttons>
         { currentUser ? (
         <div onClick={handleLogoutClick}>Sair</div>
