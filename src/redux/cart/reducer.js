@@ -49,12 +49,16 @@ const cartReducer = (state = initialState, action) => {
       };
 
     case CartActionTypes.DECREASE_PRODUCT_QUANTITY:
+      // Reduz a quantidade de um produto no carrinho, mantendo pelo menos uma unidade.
+      // Remove o produto do carrinho se sua quantidade é igual a uma unidade e é clicado o botão de remoção.
       return {
         ...state,
         products: state.products
+          // Filtra todos os produtos que não são o produto que será reduzido ou que têm uma quantidade maior do que 1
           .filter(
             (product) => product.id !== action.payload || product.quantity > 1
           )
+          // Mapeia os produtos que restaram, atualizando a quantidade do produto que será reduzido
           .map((product) =>
             product.id === action.payload
               ? { ...product, quantity: product.quantity - 1 }
