@@ -14,9 +14,6 @@ import { selectProductsCount } from "../../redux/cart/cart-selectors";
 function Header() {
   const [cartIsVisible, setCartIsVisible] = useState(false);
 
-
-
-  
   const {currentUser} = useSelector(rootReducer => rootReducer.userReducer)
   const {products} = useSelector((rootReducer) => rootReducer.cartReducer)
 
